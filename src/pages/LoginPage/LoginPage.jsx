@@ -21,7 +21,6 @@ import { ReactComponent as IconGoogle } from '../../images/icons/google-icon.svg
 import { ReactComponent as IconClose } from '../../images/icons/cross-small-red.svg';
 import { ReactComponent as IconCheck } from '../../images/icons/check.svg';
 import { Container } from '@mui/system';
-// import { useTheme } from '@material-ui/core/styles';
 
 const ValidationTextField = styled(TextField)({
   '& .MuiInputBase-root.MuiOutlinedInput-root': {

@@ -22,9 +22,6 @@ const BootstrapDialog = styled(Dialog)(() => ({
     flexDirection: 'column',
     gap: '9px',
     paddingBottom: '40px',
-    // '@media (min-width: 768px)': {
-      
-    // },
   },
 }));
 
