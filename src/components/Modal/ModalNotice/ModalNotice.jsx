@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { addToFavorites, deleteFromFavorite } from 'redux/user/userOperations';
 import { toast } from 'react-toastify';
-// import { getFavorites } from 'redux/user/userSelectors';
 import { deleteFavoriteObj } from 'redux/user/userSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import { getOneNotice } from 'redux/notices/noticesSelectors';
@@ -18,7 +17,6 @@ function ModalNotice({ noticeid, onClose }) {
   const favorites = useSelector(state => state.user.favorite);
   const isFavorite = favorites.some((favorite) => favorite._id === noticeid);
   const isLoggedIn = useSelector(getAccessToken);
-// console.log("!!!!!!!!!favorites", favorites)
   const getOne = useSelector(getOneNotice);
   const [isFavorites, setIsFavorites] = useState(false);
   console.log(isFavorites)

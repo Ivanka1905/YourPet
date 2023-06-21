@@ -65,7 +65,6 @@ const AddPetForm = () => {
     lineHeight: '13.66px',
     '@media (min-width: 768px)': { lineHeight: '26.5px', fontSize: '14px' },
     position: 'relative',
-    // textAlign: 'start',
     alignItems: 'base-line',
 
     '&::after': {

@@ -3,10 +3,8 @@ const styles = {
     position: 'relative',
     display: 'flex',
     flexDirection: 'column',
-    // height: { mobile: '786px', tablet: '540px' },
     minHeight: 'max-content',
     width: { mobile: '280px', tablet: '608px' },
-    // borderRadius: { mobile: '20px', tablet: '40px'},
     p: { mobile: '30px 20px 20px 20px', tablet: '60px' },
   },
   content: {
@@ -17,11 +15,6 @@ const styles = {
     position: 'relative',
     alignItems: 'center',
     justifyContent: 'center',
-    // letterSpacing: '-0.01em',
-    // contentText: {
-    //   display: 'flex',
-    //   flexDirection: 'column',
-    //   gap: '20px',
   },
   title: {
     textAlign: 'center',
@@ -32,15 +25,12 @@ const styles = {
   },
   commentText: {
     p: '0px 20px',
-    // display: 'block',
     maxWidth: '393px',
     textAlign: 'center',
     fontWeight: 500,
     fontSize: { mobile: '14px', tablet: '16px' },
     lineHeight: { mobile: '19px', tablet: '22px' },
     letterSpacing: '-0.01em',
-
-    // lineHeight: '24px',
   },
   titleText: {
     fontWeight: '700',
@@ -56,7 +46,6 @@ const styles = {
   button: {
     textTransform: 'none',
     minWidth: { mobile: '256px', tablet: '129px' },
-    // minWidth: '129px',
     height: '40px',
     border: '2px solid #54ADFF',
     borderRadius: '40px',

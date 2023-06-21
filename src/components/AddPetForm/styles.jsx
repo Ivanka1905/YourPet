@@ -2,7 +2,6 @@ const styles = {
   root: {
     display: 'flex',
     flexDirection: 'column',
-    // gap: '24px',
     minHeight: { mobile: '496px', tablet: '542px' },
     width: { mobile: '280px',  tablet: '458px'},
     maxWidtht: {  tablet: '822px'},
@@ -26,22 +25,8 @@ const styles = {
   },
   ul: {
     display: ' flex',
-    // flexDirection: ''
-
-    // gap: '16px',
-      // alignItems: 'flex-line',
-    // alignItems: 'flex-end',
-    // textAlign: 'left',
     p: '0',
     marginBottom: '24px',
-  },
-  li: {
-    // fontSize: { mobile: '10px', tablet: '16px' },
-    // lineHeight: { mobile: '13.66px', tablet: '26px' },
-  },
-  container: {
-    // display: 'flex',
-    // flexDirection: 'collum',
   },
 };
 

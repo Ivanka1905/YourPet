@@ -134,7 +134,6 @@ const styles = {
   buttonAdd: {
     textTransform: 'none',
     minWidth: { mobile: '256px', tablet: '129px' },
-    // minWidth: '129px',
     height: '40px',
     border: '2px solid #54ADFF',
     borderRadius: '40px',
