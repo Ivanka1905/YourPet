@@ -85,7 +85,6 @@ const PersonalDetails = ({ prevStep, nextStep }) => {
             focused
             id="birthday"
             name="birthday"
-            // data-pattern="**.**.****"
             onChange={handleChange}
              onBlur={handleBlur}
               error={!!(touched.birthday && errors.birthday)}

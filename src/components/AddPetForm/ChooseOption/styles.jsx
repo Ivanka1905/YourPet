@@ -33,7 +33,6 @@ const styles = {
     maxWidth: '131px',
     mr: 'auto',
     ml: 'auto',
-    // height: '40px',
     textTransform: 'none',
     fontWeight: 700,
     fontSize: '16px',

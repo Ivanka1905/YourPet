@@ -96,7 +96,6 @@ const MoreInfo = ({ prevStep, setFormData }) => {
                   name="sex"
                   value="female"
                   alt="female"
-                  // hidden
                   focused
                   onBlur={handleBlur}
                   error={!!(touched.sex && errors.sex)}
@@ -116,7 +115,6 @@ const MoreInfo = ({ prevStep, setFormData }) => {
                   name="sex"
                   value="male"
                   alt="male"
-                  // hidden
                   focused
                   onBlur={handleBlur}
                   error={!!(touched.sex && errors.sex)}
@@ -139,7 +137,6 @@ const MoreInfo = ({ prevStep, setFormData }) => {
               <IconPlus />
             )}
             <Field
-              // as={ValidationTextField}
               type="file"
               id="avatar"
               name="avatar"
@@ -200,7 +197,6 @@ const MoreInfo = ({ prevStep, setFormData }) => {
             Comments
             <Field
               as={ValidationTextField}
-              // as="textarea"
               placeholder="Type comments"
               id="comments"
               name="comments"
