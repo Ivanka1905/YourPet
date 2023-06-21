@@ -27,7 +27,7 @@ function UserDataItem() {
   const nameCity = useRef(null);
   const nameBirtday = useRef(null);
   const user = useSelector(getUser);
-  
+
   const updateInfo = {
     email: user.email,
     name: user.name,
@@ -37,65 +37,58 @@ function UserDataItem() {
   };
 
   function clickName(e) {
-    const inputName = document.querySelector('#name')
-   console.log(inputName)
-   inputName.removeAttribute("disabled")
+    const inputName = document.querySelector('#name');
+    console.log(inputName);
+    inputName.removeAttribute('disabled');
     nameUser.current.focus();
-    
+
     getName(false);
-    
   }
   function clickEmail() {
-    const inputName = document.querySelector('#email')
-    inputName.removeAttribute("disabled")
+    const inputName = document.querySelector('#email');
+    inputName.removeAttribute('disabled');
     nameEmail.current.focus();
     getEmail(false);
   }
   function clickPhone() {
-    const inputName = document.querySelector('#phone')
-    inputName.removeAttribute("disabled")
+    const inputName = document.querySelector('#phone');
+    inputName.removeAttribute('disabled');
     namePhone.current.focus();
     getPhone(false);
   }
   function clickCity() {
-    const inputName = document.querySelector('#city')
-    inputName.removeAttribute("disabled")
+    const inputName = document.querySelector('#city');
+    inputName.removeAttribute('disabled');
     nameCity.current.focus();
     getCity(false);
   }
   function clickBirthday() {
-    const inputName = document.querySelector('#birthday')
-    inputName.removeAttribute("disabled")
+    const inputName = document.querySelector('#birthday');
+    inputName.removeAttribute('disabled');
     nameBirtday.current.focus();
     getBirthday(false);
   }
-   function handleClick(atribut) {
-    console.log(atribut)
-    if(atribut==='name'){
-      const inputName = document.querySelector('#name')
-    inputName.setAttribute("disabled", "true")
+  function handleClick(atribut) {
+    console.log(atribut);
+    if (atribut === 'name') {
+      const inputName = document.querySelector('#name');
+      inputName.setAttribute('disabled', 'true');
+    } else if (atribut === 'email') {
+      const inputName = document.querySelector('#email');
+      inputName.setAttribute('disabled', 'true');
+    } else if (atribut === 'birthday') {
+      const inputName = document.querySelector('#birthday');
+      inputName.setAttribute('disabled', 'true');
+    } else if (atribut === 'city') {
+      const inputName = document.querySelector('#city');
+      inputName.setAttribute('disabled', 'true');
+    } else if (atribut === 'phone') {
+      const inputName = document.querySelector('#phone');
+      inputName.setAttribute('disabled', 'true');
     }
-    else if(atribut==='email'){
-      const inputName = document.querySelector('#email')
-    inputName.setAttribute("disabled", "true")
-    }
-    else if(atribut==='birthday'){
-      const inputName = document.querySelector('#birthday')
-    inputName.setAttribute("disabled", "true")
-    }
-    else if(atribut==='city'){
-      const inputName = document.querySelector('#city')
-    inputName.setAttribute("disabled", "true")
-    }
-    else if(atribut==='phone'){
-      const inputName = document.querySelector('#phone')
-    inputName.setAttribute("disabled", "true")
-    }
-  
+
     dispatch(updateInfoUser(updateInfo));
   }
-
-  
 
   const ChangeData = e => {
     const id = e.currentTarget.id;
@@ -114,17 +107,14 @@ function UserDataItem() {
     }
     return updateInfo;
   };
- 
 
- 
   const { name, birthday, email, phone, city } = user;
-  function userName(name){
-if(name ==='Name'){
-  return email.split('@')[0]
-}
-else{
- return  name
-}
+  function userName(name) {
+    if (name === 'Name') {
+      return email.split('@')[0];
+    } else {
+      return name;
+    }
   }
 
   return (
@@ -135,18 +125,17 @@ else{
           <FormControl variant="filled" sx={{ ml: 'auto' }}>
             <FilledInput
               id="name"
-              
               sx={styles.input}
               onChange={ChangeData}
               inputRef={nameUser}
               defaultValue={userName(name)}
-   disabled
+              disabled
               endAdornment={
                 <InputAdornment position="end" sx={{ pt: '12px' }}>
                   {btnName ? (
                     <Pencel
                       className="name"
-                      onClick={(e) => {
+                      onClick={e => {
                         clickName(e);
                       }}
                       edge="end"
@@ -157,7 +146,7 @@ else{
                       stroke="#54ADFF"
                       onClick={() => {
                         getName(true);
-                       
+
                         handleClick('name');
                       }}
                       edge="end"
@@ -232,7 +221,7 @@ else{
                       stroke="#54ADFF"
                       onClick={() => {
                         getBirthday(true);
-                        handleClick("birthday");
+                        handleClick('birthday');
                       }}
                       edge="end"
                     ></Check>
@@ -268,7 +257,7 @@ else{
                       stroke="#54ADFF"
                       onClick={() => {
                         getPhone(true);
-                        handleClick("phone");
+                        handleClick('phone');
                       }}
                       edge="end"
                     ></Check>
@@ -304,7 +293,7 @@ else{
                       stroke="#54ADFF"
                       onClick={() => {
                         getCity(true);
-                        handleClick("city");
+                        handleClick('city');
                       }}
                       edge="end"
                     ></Check>

@@ -44,7 +44,6 @@ const NoticesSearch = ({ onSearch }) => {
       .then(data => {
         setData(data);
         onSearch(newQuery);
-        // setQuery('');
       })
       .catch(error => {
         console.error(error);
@@ -68,12 +67,10 @@ const NoticesSearch = ({ onSearch }) => {
       if (categoryName === 'favorite') {
         action = getFavorite({
           query: '',
-          // category: categoryName
         });
       } else if (categoryName === 'owner') {
         action = getUserNotices({
           query: '',
-          // category: categoryName
         });
       } else {
         action = getNoticesByQwery({ query: '', category: categoryName });

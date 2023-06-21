@@ -15,8 +15,6 @@ const styles = {
     fontWeight: '600',
     fontSize: { mobile: '14px', tablet: '18px', desktop: '18px' },
     lineHeight: { mobile: '19px', tablet: '25px', desktop: '25px' },
-    /* identical to box height */
-
     display: 'flex',
     alignItems: 'center',
     letterSpacing: '0.04em',

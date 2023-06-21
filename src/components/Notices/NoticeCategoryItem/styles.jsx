@@ -33,7 +33,6 @@ const styles = {
   category: {
     position: 'absolute',
     top: 16,
-    // left: 1,
     bgcolor: 'primary.secondary',
     color: 'primary',
     p: 1,
@@ -80,7 +79,6 @@ const styles = {
     borderRadius: 16,
     height: 28,
     width: 'fit-content',
-    // margin: '0 5px',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',

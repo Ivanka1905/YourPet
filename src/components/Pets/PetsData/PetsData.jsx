@@ -125,7 +125,6 @@ function PetsData() {
                   </Typography>
                   <IconButton
                     sx={styles.btnTrash}
-                    // startIcon={<Trash sx={styles.icon}/>}
                     onClick={handleDeleteModalOpen}
                   >
                     <Trash />

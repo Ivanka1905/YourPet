@@ -18,8 +18,6 @@ const styles = {
     marginLeft: { mobile: '0', tablet: '', desktop: '' },
     pl: { mobile: '0', tablet: '', desktop: '' },
     background: '#FFFFFF',
-    /* Shadow default */
-
     boxShadow: '3px 8px 14px rgba(136, 198, 253, 0.19)',
     borderRadius: '40px',
   },
@@ -30,7 +28,6 @@ const styles = {
     mt: '12px',
   },
   pets: {
-    // width: '207px',
     height: '38px',
     left: '17px',
 
@@ -48,15 +45,12 @@ const styles = {
     fontWeight: '600',
     fontSize: '16px',
     lineHeight: '22px',
-    /* or 138% */
     mt: '-9px',
     ml: '40px',
     display: 'flex',
     
     letterSpacing: '0.04em',
     alignItems: 'flex-start',
-    /* Черный */
-
     color: '#111111',
   },
   btnAdd: {

@@ -137,7 +137,6 @@ const NoticeCategoryItem = ({ data, categoryName }) => {
   return (
     <Card sx={styles.root}>
       <Box
-      // sx={styles.wrapper}
       >
         <CardMedia
           sx={styles.media}
@@ -146,7 +145,6 @@ const NoticeCategoryItem = ({ data, categoryName }) => {
         />
         <Typography
           sx={styles.category}
-          // variant="subtitle2"
         >
           {CATEGORY[category]}
         </Typography>

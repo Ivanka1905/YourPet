@@ -1,10 +1,8 @@
-// Початковий стан фільтрів
 const initialState = {
   age: null,
   gender: null,
 };
 
-// Редуктор для параметрів пошуку
 const filterReducer = (state = initialState, action) => {
   switch (action.type) {
     case 'SET_AGE_FILTER':
